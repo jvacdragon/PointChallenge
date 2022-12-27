@@ -33,9 +33,13 @@ function App() {
 
   return (
     <React.Fragment>
+      <div className="buttons">
+        <div className="test">
 
-      <button className='undo' onClick={handleErasePoint}>Undo Last Point</button>
-      <button className="recreate" onClick={recreatePoint}>Recreate Point</button>
+          <button onClick={handleErasePoint}>Undo Last Point</button>
+          <button onClick={recreatePoint}>Recreate Point</button>
+        </div>
+      </div>
 
       <div className="App" onClick= {handleAddPoint}>
         {...point}

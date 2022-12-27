@@ -29,7 +29,6 @@ h1 {
 }
 
 button {
-  position: absolute;
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
@@ -44,12 +43,48 @@ button:hover {
   border-color: #646cff;
 }
 
-button.undo{
-  left: 30%;
+.buttons{
+  position: absolute;
   top: 50%;
+  left: 40%;
 }
 
-button.recreate{
-  left: 60%;
-  top: 50%;
+
+@media screen and (max-width: 1064px) {
+  .buttons{
+    left: 35%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .buttons{
+    left: 30%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .buttons{
+    left: 25%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .buttons{
+    font-size: smaller;
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .buttons{
+    top: 40%;
+    left: 15%;
+    font-size: smaller;
+    width: 60%;
+  }
+}
+
+.test{
+  display: flex;
+  gap: 10%;
 }
